@@ -138,6 +138,34 @@
             color: #ff4d4d;
         }
 
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 0.5px solid #ccc;
+        }
+        .email-header {
+            margin-bottom: 20px;
+        }
+        .email-header div {
+            margin-bottom: 5px;
+        }
+        .email-body {
+            margin-bottom: 20px;
+        }
+        .email-footer {
+            font-style: italic;
+            color: #555;
+        }
+        .quote {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-left: 5px solid #ccc;
+            background-color: #f9f9f9;
+            font-style: italic;
+            color: #555;
+        }
+
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
@@ -173,63 +201,69 @@
 <div class="container">
     <div class="content">
         <div class="navbar">
-            <img src="/assets/make-clear.png" alt="Build With Us Logo" class="logo">
+            <a href="/"><img src="/assets/make-clear.png" alt="Build With Us Logo" class="logo"></a>
             <div class="nav-links">
-                <a href="/why.html">Why?</a>
+                <a href="#about">Why?</a>
                 <a href="#schedule">Schedule</a>
                 <a href="#register">Register</a>
             </div>
         </div>
-        <h1>BUILD WITH US</h1>
-        <div class="date">14 - 28 SEPTEMBER</div>
-        <div id="countdown">Starting In: <span id="timer"></span></div>
-        <div class="details">
-            Daily from 8am-4pm<br>
-            Swartz Center,
+
+        <h2>Why Build?</h2>
+
+        <p>
+            Building something useful and putting it out there is how we reciprocate the infinite
+            kindness of our society.
+        </p>
+
+        <p>
+            There is no better happiness for a builder than seeing something they built being utilized by others.
+            We've been there and felt it. We want you to feel it too.
+        </p>
+        <p>
+            The time is now to build and ship your ideas, and We are here to help you get started.
+        </p>
+
+        <h2> Some Examples through history </h2>
+
+        <h3>Mail from Steve Jobs to himself</h3>
+        <div class="email-container">
+
+            <div class="email-header">
+                <div><strong>From:</strong> Steve Jobs, sjobs@apple.com</div>
+                <div><strong>To:</strong> Steve Jobs, sjobs@apple.com</div>
+                <div><strong>Date:</strong> Thursday, September 2, 2010 at 11:08PM</div>
+            </div>
+            <div class="email-body">
+                <p>I grow little of the food I eat, and of the little I do grow I did not breed or perfect the seeds.</p>
+                <p>I do not make any of my own clothing.</p>
+                <p>I speak a language I did not invent or refine.</p>
+                <p>I did not discover the mathematics I use.</p>
+                <p>I am protected by freedoms and laws I did not conceive of or legislate, and do not enforce or adjudicate.</p>
+                <p>I am moved by music I did not create myself.</p>
+                <p>When I needed medical attention, I was helpless to help myself survive.</p>
+                <p>I did not invent the transistor, the microprocessor, object oriented programming, or most of the technology I work with.</p>
+                <p>I love and admire my species, living and dead, and am totally dependent on them for my life and well being.</p>
+            </div>
+            <div class="email-footer">
+                Sent from my iPad
+            </div>
         </div>
-        <ul>
-            <li> Love working at high velocity with peers to get things done?</li>
-            <li> Want to market your idea and make people notice?</li>
-            <li> We love building and selling. And we are doing it fast!</li>
-            <li> Come join us to build things.</li>
-        </ul>
+        <div class="quote">
+            <blockquote>
+                "People won’t remember how you started. They’ll remember how you left."
 
-        <h3>Building Your Dream Product: AI Makes It Possible</h3>
+                <p>- Tony Fadell, <a href="https://www.goodreads.com/book/show/59696349-build" >Build: An Unorthodox Guide to Making Things Worth Making</a> </p>
+            </blockquote>
+        </div>
+        <h1>BUILD WITH US</h1>
 
-        <h4>Ideas to Reality, Faster Than Ever</h4>
-        <ul>
-            <li>Turn concepts into working prototypes in days</li>
-            <li>Iterate and improve at unprecedented speeds with the help of mentors</li>
-            <li>See your vision come to life before your eyes</li>
-        </ul>
+        <p> It takes courage to build and get feedback on it. Follow our progress here.  </p>
 
-        <h3> We are very Passionate Builder </h3>
-        <ul>
-            <li> We are builders at Heart, who want to help others</li>
-            <li> We've previously built and scaled Billion Req/Day Services.</li>
-        </ul>
-
-        <h3>Empower Your Creativity</h3>
-
-        <ul>
-            <li>Focus on innovation while AI handles the heavy lifting</li>
-            <li>Bring complex ideas to life with ease</li>
-            <li>Explore possibilities previously out of reach</li>
-        </ul>
-
-        <h3>Everyone's an Entrepreneur</h3>
-        <ul>
-            <li>Start your journey, regardless of technical background</li>
-            <li>Test and validate ideas without massive investment</li>
-            <li>Turn your unique insights into real-world solutions</li>
-        </ul>
-        <a href="http://www.productsprint.org" class="register">Register online now</a>
+        <a href="http://productsprint.org" class="register">Register online now</a>
         <h2>Go To Market in Two Weeks !!</h2>
     </div>
-    <div class="images">
-        <img src="assets/collaborate.png" alt="Collaborate image 3">
-        <img src="assets/create.png" alt="create image 2">
-    </div>
+
 </div>
 <footer>
     <div class="icons">
@@ -239,34 +273,6 @@
         <a href="http://www.productsprint.org" target="_blank" class="icon"><i class="fas fa-globe"></i></a>
     </div>
 </footer>
-<script>
-    // Set the date we're counting down to
-    const countDownDate = new Date("Sep 14, 2024 08:00:00").getTime();
 
-    // Update the countdown every 1 second
-    const x = setInterval(function () {
-        // Get today's date and time
-        const now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        const distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Display the result in the element with id="timer"
-        document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
-
-        // If the count down is finished, write some text
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("timer").innerHTML = "EVENT STARTED";
-        }
-    }, 1000);
-</script>
 </body>
 </html>
