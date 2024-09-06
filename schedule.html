@@ -180,48 +180,26 @@
                 <a href="#register">Register</a>
             </div>
         </div>
-        <h1>BUILD WITH US</h1>
-        <div class="date">14 - 28 SEPTEMBER</div>
-        <div id="countdown">Starting In: <span id="timer"></span></div>
-        <div class="details">
-            Daily from 8am-4pm<br>
-            Swartz Center,
-        </div>
+        <h1>Two-Week Schedule</h1>
+        <h2>Week One</h2>
         <ul>
-            <li> Love working at high velocity with peers to get things done?</li>
-            <li> Want to market your idea and make people notice?</li>
-            <li> We love building and selling. And we are doing it fast!</li>
-            <li> Come join us to build things.</li>
+            <li><span class="day"><strong>Day 1:</strong>&nbsp;&nbsp;</span> Introduction to Building/Idea Generation</li>
+            <li><span class="day"><strong>Day 2:</strong>&nbsp;&nbsp;</span> Market Research</li>
+            <li><span class="day"><strong>Day 3:</strong>&nbsp;&nbsp;</span> Prototyping Day 1</li>
+            <li><span class="day"><strong>Day 4:</strong>&nbsp;&nbsp;</span> Prototyping Day 2</li>
+            <li><span class="day"><strong>Day 5:</strong>&nbsp;&nbsp;</span> User Feedback</li>
+            <li><span class="day"><strong>Day 6:</strong>&nbsp;&nbsp;</span> Iteration</li>
+            <li><span class="day"><strong>Day 7:</strong>&nbsp;&nbsp;</span> MVP Development</li>
         </ul>
-
-        <h3>Building Your Dream Product: AI Makes It Possible</h3>
-
-        <h4>Ideas to Reality, Faster Than Ever</h4>
+        <h2>Week Two</h2>
         <ul>
-            <li>Turn concepts into working prototypes in days</li>
-            <li>Iterate and improve at unprecedented speeds with the help of mentors</li>
-            <li>See your vision come to life before your eyes</li>
-        </ul>
-
-        <h3> We are very Passionate Builder </h3>
-        <ul>
-            <li> We are builders at Heart, who want to help others</li>
-            <li> We've previously built and scaled Billion Req/Day Services.</li>
-        </ul>
-
-        <h3>Empower Your Creativity</h3>
-
-        <ul>
-            <li>Focus on innovation while AI handles the heavy lifting</li>
-            <li>Bring complex ideas to life with ease</li>
-            <li>Explore possibilities previously out of reach</li>
-        </ul>
-
-        <h3>Everyone's an Entrepreneur</h3>
-        <ul>
-            <li>Start your journey, regardless of technical background</li>
-            <li>Test and validate ideas without massive investment</li>
-            <li>Turn your unique insights into real-world solutions</li>
+            <li><span class="day"><strong>Day 8:</strong>&nbsp;&nbsp;</span> Branding and Marketing Strategies</li>
+            <li><span class="day"><strong>Day 9:</strong>&nbsp;&nbsp;</span>  MVP Development Day 2</li>
+            <li><span class="day"><strong>Day 10:</strong>&nbsp;&nbsp;</span> MVP Development Day 3</li>
+            <li><span class="day"><strong>Day 11:</strong>&nbsp;&nbsp;</span> Launch Day</li>
+            <li><span class="day"><strong>Day 12:</strong>&nbsp;&nbsp;</span> User Outreach and feedback </li>
+            <li><span class="day"><strong>Day 13:</strong>&nbsp;&nbsp;</span> Post-Launch Analysis</li>
+            <li><span class="day"><strong>Day 14:</strong>&nbsp;&nbsp;</span> Future Planning</li>
         </ul>
         <a href="http://www.productsprint.org" class="register">Register online now</a>
         <h2>Go To Market in Two Weeks !!</h2>
@@ -239,34 +217,6 @@
         <a href="http://www.productsprint.org" target="_blank" class="icon"><i class="fas fa-globe"></i></a>
     </div>
 </footer>
-<script>
-    // Set the date we're counting down to
-    const countDownDate = new Date("Sep 14, 2024 08:00:00").getTime();
-
-    // Update the countdown every 1 second
-    const x = setInterval(function () {
-        // Get today's date and time
-        const now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        const distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Display the result in the element with id="timer"
-        document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
-
-        // If the count down is finished, write some text
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("timer").innerHTML = "EVENT STARTED";
-        }
-    }, 1000);
 </script>
 </body>
 </html>
